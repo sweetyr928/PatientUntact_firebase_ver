@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gotochat_btn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#F4F6F6"
+    android:padding="15dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_imageview"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/prof">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/nametext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_toEndOf="@+id/profile_imageview"
+        android:layout_toRightOf="@+id/profile_imageview"
+        android:text="Username"
+        android:textColor="@color/backg"
+        android:textSize="20dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/titletext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/profile_imageview"
+        android:inputType="textMultiLine"
+        android:maxLines="10"
+        android:paddingTop="5dp"
+        android:text="text"
+        android:textSize="16dp"
+        android:textColor="@color/backg"
+        android:layout_marginEnd="10dp" />
+
+
+</RelativeLayout>
