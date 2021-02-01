@@ -30,21 +30,22 @@
             android:textStyle="bold" />
 
     </androidx.appcompat.widget.Toolbar>
-    <com.google.android.material.tabs.TabLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/tab_layout"
-        android:background="@color/backg"
-        app:tabSelectedTextColor="#fff"
-        app:tabIndicatorColor="@color/colorPrimaryDark"
-        app:tabTextColor="#fff"/>
 
     <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/view_pager"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/backg"
+            app:tabIndicatorColor="@color/colorPrimaryDark"
+            app:tabSelectedTextColor="#fff"
+            app:tabTextColor="#fff" />
     </androidx.viewpager.widget.ViewPager>
 
 </LinearLayout>
