@@ -31,11 +31,11 @@
 
     </androidx.appcompat.widget.Toolbar>
 
-    <androidx.viewpager.widget.ViewPager
+    <ViewPager.CustomViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        >
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tab_layout"
@@ -46,6 +46,6 @@
             app:tabIndicatorColor="@color/colorPrimaryDark"
             app:tabSelectedTextColor="#fff"
             app:tabTextColor="#fff" />
-    </androidx.viewpager.widget.ViewPager>
+    </ViewPager.CustomViewPager>
 
 </LinearLayout>
