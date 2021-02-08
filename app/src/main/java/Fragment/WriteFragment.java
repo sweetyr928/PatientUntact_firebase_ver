@@ -63,6 +63,7 @@ public class WriteFragment extends Fragment {
                 hashMap.put("id", fuser.getUid());
                 hashMap.put("name", name_editText.getText().toString());
                 hashMap.put("title", title_editText.getText().toString());
+                hashMap.put("match",false);
 
                 databaseReference.child("Board").push().setValue(hashMap);
 
